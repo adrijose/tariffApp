@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from './Pages/Search';
+import List from './Pages/List';
+import Detail from './Pages/Detail';
+import {Route} from 'wouter';
+import React from 'react';
+import { TarifasContext } from './context/tarifas';
+
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TarifasContext>
+      <Route path="/" component={Search}></Route>
+      <Route path="/result/:GB" component={List}></Route>
+      <Route path="/detail/:id" component={Detail}></Route>
+    </TarifasContext>
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.Search{
+    width: 100%;
+    height: 100vh;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.Search > div{
+    width: 25%;
+    padding: 1em;    
+}
+
+.Search > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Search > div > form > input{
+    width: 80%;
+    padding: .5em;
+    margin: 1em;
+    text-align: center;
+    font-size: .7em;
+}
+
+.Search > div > form > button{
+    width: 50%;
+    padding: .5em;
+    font-size: .7em;
+}
+
+.Search > div > form > button:hover{
+    background-color: rgb(175, 175, 175);
+    cursor:pointer;
+}
+

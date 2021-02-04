@@ -1,0 +1,18 @@
+.List{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.List > table {
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+.List > table > tbody > tr{
+    border-bottom: 1px solid black;
+}
+
+.List > table > tbody > tr > td{
+    padding: 2em;
+}
